@@ -61,7 +61,21 @@ def download_file(filename):
 if __name__ == '__main__':
     app.run(debug=True)
 
----
 
-##  🌐 ('index.html') – UI Template
+```markdown
+## 🌐 HTML UI (`index.html`)
 
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <title>File Upload & Download Portal</title>
+</head>
+<body>
+    <h2>Upload a File</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
