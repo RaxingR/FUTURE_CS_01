@@ -74,12 +74,9 @@ def download_file(filename):
 
 if __name__ == '__main__':
     app.run(debug=True)
----
 
-## 💻 index.html (Template File)
 
-```html
-
+``` 
 <!doctype html>
 <html lang="en">
 <head>
@@ -106,7 +103,6 @@ if __name__ == '__main__':
         <input type="file" name="file" required>
         <input type="submit" value="Upload">
     </form>
-
     <h2>Available Files</h2>
     <ul>
       {% for file in files %}
