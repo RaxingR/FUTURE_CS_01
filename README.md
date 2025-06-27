@@ -63,9 +63,10 @@ if __name__ == '__main__':
 
 
 ```markdown
+
 ## 🌐 HTML UI (`index.html`)
 
-```html
+``` html
 <!doctype html>
 <html lang="en">
 <head>
