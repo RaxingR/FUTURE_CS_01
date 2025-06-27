@@ -12,7 +12,7 @@ This project allows secure file sharing using:
 - ⚙️ Python Flask framework  
 - 📁 Secure file upload/download  
 - 🖥️ HTML templates for UI  
-
+- 📦 pip install flask in vs terminal
 ---
 
 ## 📂 FUTURE_CS_03/ Directory Structure
@@ -62,21 +62,49 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
-```markdown
+```
 
-## 🌐 HTML UI (`index.html`)
+## 🌐 HTML Template (`index.html`)
 
-``` html
+<h2>🌐 HTML Template: index.html</h2>
+
 <!doctype html>
 <html lang="en">
 <head>
     <title>File Upload & Download Portal</title>
+    <style>
+        body { font-family: Arial; margin: 2em; }
+        .container { max-width: 600px; margin: auto; }
+        .flash { color: rgb(0, 255, 26); }
+    </style>
 </head>
 <body>
+<div class="container">
     <h2>Upload a File</h2>
-    <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="file">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash">
+          {% for message in messages %}
+            <p>{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+    <form method="post" action="{{ url_for('upload_file') }}" enctype="multipart/form-data">
+        <input type="file" name="file" required>
         <input type="submit" value="Upload">
     </form>
+    <h2>Available Files</h2>
+    <ul>
+      {% for file in files %}
+        <li>
+          {{ file }}
+          [<a href="{{ url_for('download_file', filename=file) }}">Download</a>]
+        </li>
+      {% else %}
+        <li>No files uploaded yet.</li>
+      {% endfor %}
+    </ul>
+</div>
 </body>
 </html>
