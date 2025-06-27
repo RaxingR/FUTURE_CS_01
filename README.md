@@ -27,7 +27,7 @@ This project allows secure file sharing using:
 
 ---
 
-## 🧪 Sample Code (`main.py`)
+## 🧪 Sample Code (`main.py')
 
 ```python
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory, flash
@@ -63,6 +63,5 @@ if __name__ == '__main__':
 
 ---
 
-## 🧠 Project Overview
+##  🌐 ('index.html') – UI Template
 
-This project allows secure file sharing using
