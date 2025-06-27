@@ -65,4 +65,4 @@ if __name__ == '__main__':
 
 ## 🧠 Project Overview
 
-This project allows secure file sharing using:
+This project allows secure file sharing using
