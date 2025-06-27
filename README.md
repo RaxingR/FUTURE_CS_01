@@ -66,8 +66,6 @@ if __name__ == '__main__':
 
 ## 🌐 HTML Template (`index.html`)
 
-<h2>🌐 HTML Template: index.html</h2>
-
 <!doctype html>
 <html lang="en">
 <head>
