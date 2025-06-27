@@ -107,7 +107,7 @@ if __name__ == '__main__':
 </body>
 </html>
 ```
-## 📝 Uploads IMAGE 
+## 📝 📂Uploads/ IMAGE 
 ## 🖼️ Uploaded
 
 ![Preview](uploads/sample.png)
