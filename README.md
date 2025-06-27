@@ -63,4 +63,5 @@ if __name__ == '__main__':
 
 ---
 
-## 🧪 Sample Code (`main.py`)
+![System Diagram](uploads/sample.png)
+
