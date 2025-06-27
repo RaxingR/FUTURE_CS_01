@@ -76,7 +76,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 ---
 
-## 💻 index.html (Template File)
+## 💻index.html (Template File)
 
 ```html
 
