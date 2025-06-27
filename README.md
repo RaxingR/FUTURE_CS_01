@@ -110,4 +110,4 @@ if __name__ == '__main__':
 ## 📝 Uploads IMAGE 
 ## 🖼️ Uploaded
 
-![Preview](uploads/sample.jpg)
+![Preview](uploads/sample.png)
