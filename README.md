@@ -63,5 +63,6 @@ if __name__ == '__main__':
 
 ---
 
-![System Diagram](uploads/sample.png)
+## 🧠 Project Overview
 
+This project allows secure file sharing using:
